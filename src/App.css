@@ -1,8 +1,205 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(65px, auto);
+  height: 100vh;
 }
 
-.App-logo {
+.title{
+  grid-column-start: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace
+}
+
+.clock{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.clock-label{
+  display: grid;
+  grid-row-start: 1;
+  color: white;
+  padding-left: 10px;
+}
+
+.clock-content{
+  display: grid;
+  grid-row-start: 2;
+  justify-content: center;
+  align-items: center;
+  font-size:24px;
+  color: white;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.forecast{
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  background-color: blue;
+  color: white;
+  border: 2px solid black;
+  font-size: 24px;
+  height: 165px;
+}
+
+.forecast div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#location{
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#submit-button{
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+::placeholder{
+  color: white;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.tabs-auto{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-start: 6;
+  grid-column-start: 2;
+}
+
+.tabs{
+  width: 240px;
+  height: 200px;
+  
+}
+
+.tab-title-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+.single-tab{
+  background-color: purple;
+  color: white;
+  width: 110%;
+  border: none;
+  font-size: 18px;
+  border-radius: 90px 90px 0 0;
+  border: 2px solid black ;
+  
+}
+
+.single-tab:hover{
+  background-color: black;
+}
+
+.single-tab-curr{
+  background-color: purple;
+  color: white;
+  width: 110%;
+  border: none;
+  font-size: 18px;
+  border-radius: 90px 90px 0 0;
+  border: 2px solid black ;
+  border-bottom: none;
+}
+
+.current-tab-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: white;
+  height: 150px;
+}
+
+button:focus, input[type="button"]:focus {
+  outline: none;
+}
+
+.autocomplete{
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  /* height: 165px;
+  background-color: turquoise;
+  border: 2px solid black; */
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 191px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+  background-color: turquoise;
+}
+
+.names{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  height: 140%;
+}
+
+.input input{
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  width: 70px;
+}
+
+.names ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+li{
+  list-style-type: square;
+  color: white;
+}
+
+
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
@@ -31,3 +228,5 @@
     transform: rotate(360deg);
   }
 }
+
+ */ 

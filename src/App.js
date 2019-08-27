@@ -5,7 +5,7 @@ import Clock from './clock.jsx'
 import Title from './title.jsx'
 import Forecast from './forecast.jsx'
 import TabsAuto from './tabs_auto.jsx'
-
+import Like from './like.jsx'
 
 function App() {
   const tabs = [{title: "tab1", content: "This is tab1"}, {title: "tab2", content: "This is tab2"}, {title: "tab3", content: "This is tab3"}]
@@ -15,7 +15,7 @@ function App() {
       <Clock />
       <Forecast />
       <TabsAuto tabs={tabs}/>
-      
+      <Like/>
     </div>
   );
 }

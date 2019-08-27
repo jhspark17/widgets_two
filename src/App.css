@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-auto-rows: minmax(65px, auto);
-  height: 100vh;
+  
 }
 
 .title{
@@ -195,6 +195,21 @@ button:focus, input[type="button"]:focus {
 li{
   list-style-type: square;
   color: white;
+}
+
+.like-button{
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 8;
+  display: flex;
+  justify-content: center;
+}
+
+.like-button button{
+  height: 30%;
+  width: 20%;
+  background-color: pink;
+  border: 2px dotted black;
 }
 
 

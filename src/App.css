@@ -97,8 +97,8 @@
 }
 
 .tabs{
-  width: 240px;
-  height: 200px;
+  width: 80%;
+  height: 100%;
   
 }
 
@@ -141,7 +141,7 @@
   align-items: center;
   background-color: purple;
   color: white;
-  height: 150px;
+  height: 80%;
 }
 
 button:focus, input[type="button"]:focus {
@@ -173,10 +173,15 @@ button:focus, input[type="button"]:focus {
   position: relative;
 }
 
+.interior-names{
+  height: 100%;
+  width: 50%;
+}
+
 .input{
   display: flex;
   justify-content: center;
-  height: 140%;
+  height: 120%;
 }
 
 .input input{
@@ -188,7 +193,7 @@ button:focus, input[type="button"]:focus {
 
 .names ul{
   display: flex;
-  justify-content: center;
+  
   flex-direction: column;
 }
 

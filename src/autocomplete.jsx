@@ -14,7 +14,6 @@ const Autocomplete = props => {
 	}, [list])
 
 	const filterNames = (phrase, names) => {
-		console.log(phrase)
 		if (!phrase) {
 			setList(names);
 			return
@@ -41,6 +40,7 @@ const Autocomplete = props => {
 			<input type="text" onChange={fillText}/>
 			</div>
 			<div className="names">
+				<div className="interior-names">
 			<ul>
 				{list.map(name => {
 					return (
@@ -50,6 +50,7 @@ const Autocomplete = props => {
 					)
 				})}
 			</ul>
+			</div>
 			</div>
 		</div>
 	)

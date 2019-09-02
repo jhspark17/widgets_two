@@ -19,6 +19,9 @@ const Forecast = props => {
     } else {
       setLocation(data.message)
       setTemp("")
+      setTimeout(() => {
+        setLocation("San Francisco");
+      }, 5000)
     }
     document.getElementById("location").value = ""
   }

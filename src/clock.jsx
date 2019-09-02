@@ -12,6 +12,7 @@ const Clock = props => {
 	}, [time])
 
 	const content = (
+		
 		<div className="clock">
 			<div className="clock-label">
 				<h1>Date:</h1>
@@ -22,6 +23,7 @@ const Clock = props => {
 				<div>{time}</div>
 			</div>		
 		</div>
+		
 	)
 	return content
 }

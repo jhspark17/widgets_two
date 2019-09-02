@@ -5,11 +5,6 @@ const Tabs = props => {
 	const {tabs} = props;
 	const [curr, setCurr] = useState(tabs[0])
 
-	const changeTab = (i) => {
-		setCurr(tabs[i])
-	}
-
-
 	const content = (
 		<div className="tabs">
 			<div className="tab-title-container">
@@ -22,7 +17,7 @@ const Tabs = props => {
 					)
 				} else {
 					return (
-					<button className="single-tab" onClick={() => changeTab(i)}>
+					<button className="single-tab" onClick={() => setCurr(tabs[i])}>
 						{tab.title}
 					</button>
 					)
